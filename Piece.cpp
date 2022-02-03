@@ -18,15 +18,22 @@
     enum class Color : uint8_my
     {
         BLACK = 0b0,
-        WHITE = 0b1,
-        MASK = 0b01000000
+        WHITE = 0b100000,
+        MASK = 0b00100000
     };
 
     enum class Movement : uint8_my
     {
         MOVED = 0b0,
-        DIDNOTMOVE = 0b1,
-        MASK = 0b10000010
+        DIDNOTMOVE = 0b1000000,
+        MASK = 0b01000000
     };
 
-//все что выше работает"
+    //все что выше работает"
+    enum class Status
+    {
+        CONTINUE,
+        CHECK,
+        DRAW,
+        MATE
+    };
